@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Index</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html {
+            overflow: hidden;
+        }
+        
+        h1,
+        footer {
+            text-align: center;
+            margin: auto;
+        }
+        
+        body {
+            display: flex;
+            height: 100vh;
+            flex-flow: column;
+            justify-content: space-around;
+            color: rgba(80, 23, 121, 0.801);
+        }
+        
+        a {
+            /* Sizing & Positioning */
+            width: 100%;
+            height: 80%;
+            margin: 10px;
+            /* a-tag Underline */
+            outline: none;
+            text-decoration: none;
+            /* Border */
+            border-radius: 25px;
+            border: 2px solid black;
+            /* Text Alignment */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Effects */
+            color: rgba(80, 23, 121, 0.801);
+            background-color: rgba(255, 208, 0, 0.623);
+            transition: 0.3s;
+        }
+        
+        a:hover {
+            /* Shadow */
+            box-shadow: 0px 0px 20px grey;
+        }
+        
+        a:active {
+            /* Shadow */
+            box-shadow: 0px 0px 0px grey;
+        }
+        
+        #container {
+            width: 70%;
+            height: 50%;
+            display: flex;
+            flex-flow: row;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Accesibilidad Web</h1>
+    <div id="container">
+        <a style="color: red;" href="Proyecto/index.html">Proyecto</a>
+        <a style="color: green;" href="Proyecto_AAA/index.html">Proyecto (AAA)</a>
+        <a style="color: brown;" href="Proyecto_Usabilidad/index.html">Proyecto (Usabilidad)</a>
+    </div>
+    <footer><i><b>Daniel Floro Gil</b></i></footer>
+
+</body>
+
+</html>

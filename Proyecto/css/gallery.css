@@ -1,0 +1,76 @@
+/* Imports */
+
+@import 'styles.css';
+
+/*  */
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#count,
+#dots {
+    display: none;
+}
+
+#gallery {
+    margin: auto;
+}
+
+@media screen and (min-width: 400px) {
+    /* General */
+    main {
+        height: 90vh;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+    /* Titles */
+    #title {
+        grid-row: 1;
+        margin-top: auto;
+        text-align: center;
+        margin-bottom: auto;
+    }
+    /* Image */
+    #content {
+        grid-row: 2;
+        margin-top: auto;
+        text-align: center;
+        margin-bottom: auto;
+    }
+    #count {
+        display: block;
+    }
+    #text {
+        padding-left: var(--articlePadding);
+        padding-right: var(--articlePadding);
+    }
+    /* Dots */
+    #dots {
+        grid-row: 3;
+        display: block;
+        text-align: center;
+        margin-top: var(--iconMargin);
+    }
+    span {
+        cursor: pointer;
+        border-radius: 50%;
+        display: inline-block;
+        width: var(--textSize);
+        height: var(--textSize);
+        background-color: #bbb;
+        transition-timing-function: ease-in-out;
+    }
+    span:hover {
+        background-color: var(--dark);
+    }
+    span.active {
+        background-color: var(--dark);
+    }
+}

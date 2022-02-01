@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>MegaOne: Contact</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" type="image/x-icon" href="../assets/image/fav.ico">
+
+    <script src="../js/javascript.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPiktT_6zd8IiEH6cUdlChQmLZXBcVmU8&callback=initMap" defer></script>
+</head>
+
+<body onscroll="stickyNav();">
+
+    <!-- Navegation Bar -->
+    <nav>
+        <a class="logo" href="../index.html">
+            <img src="../assets/image/logo.png" alt="Logo. Home">
+        </a>
+        <a href="../html/blog.html">Blog</a>
+        <a href="../html/doctor.html">Doctor</a>
+        <a href="../html/gallery.html">Gallery</a>
+        <a class="active" href="">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <article id="info">
+            <h1> ~ Get in Touch ~ </h1>
+            <div id="infocontainer">
+
+                <!-- Information -->
+                <div id="infopane">
+                    <i class="fa fa-phone"></i>
+                    <div>
+                        <p><b>Phone</b></p>
+                        <p>555-555-555</p>
+                    </div>
+                    <i class="fa fa-map-marker" style="color: red;"></i>
+                    <div>
+                        <p><b>Location</b></p>
+                        <p>...</p>
+                    </div>
+                    <i class="material-icons">email</i>
+                    <div>
+                        <p><b>eMail</b></p>
+                        <p>staff@megaone.com</p>
+                    </div>
+                </div>
+
+                <!-- MAP -->
+                <div id="mappane"></div>
+
+            </div>
+        </article>
+
+        <!-- Mail -->
+        <article id="mail">
+            <h1>Or mail us...</h1>
+            <div id="formcontainer">
+                <form action="" method="post">
+                    <input id="name" type="text" placeholder="Your Name">
+                    <input id="email" type="text" placeholder="Your e-Mail">
+                    <input id="subject" id="name" type="text" placeholder="Subject">
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input id="send" type="image" src="../assets/image/contact_send.png " alt="Send">
+                </form>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Social Media Links -->
+        <div id="footerLinks">
+            <a href=""><i class="fa fa-whatsapp"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-pinterest-p"></i></a>
+            <a id="web_map" href="../html/map.html">Web Map</a>
+        </div>
+        <!-- CopyRight -->
+        <p style="font-weight: bold;"><sup>&#169;</sup>2021 MegaOne.</p>
+    </footer>
+
+    <!-- Contact US -->
+    <div id="contactUs" onclick="mailUsToogle(event);">
+        <i class="material-icons">email</i>
+    </div>
+    <div id="contactBubble">
+        <h1>Boook Appointment</h1>
+        <p>Send us yout name and mail and we will contact you!</p>
+        <p>We will send you via mail a date with your meeting.</p>
+        <p>Remember: Your 1<sup><u>st</u></sup> appointment it's free! </p>
+        <form action="" method="post" id="contactUsForm">
+            <input id="nameBubble" type="text" placeholder="Your Name">
+            <input id="emailBubble" type="text" placeholder="Your e-Mail">
+            <input id="sendBubble" type="image" src="../assets/image/contact_send.png " alt="Send">
+        </form>
+    </div>
+</body>
+
+</html>

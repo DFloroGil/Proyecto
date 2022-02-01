@@ -1,0 +1,80 @@
+/* Imports */
+
+@import 'styles.css';
+
+/*  */
+
+main {
+    display: grid;
+    grid-template-rows: 3fr 1fr 3fr;
+    margin-bottom: var(--articlePadding);
+}
+
+img {
+    grid-row: 1;
+}
+
+img,
+video {
+    width: 100%;
+    height: auto;
+}
+
+#biography {
+    grid-row: 2;
+}
+
+#container {
+    grid-row: 3;
+}
+
+.numbers {
+    color: var(--highlight);
+    font-size: var(--numberSize);
+    margin-bottom: var(--lowMargin);
+}
+
+@media screen and (min-width: 400px) {
+    main {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    /* Doctor Image */
+    img {
+        margin: auto;
+        grid-column: 1;
+    }
+    /* Video-Data Container */
+    #container {
+        grid-row: 1;
+        margin: auto;
+        display: grid;
+        grid-column: 2;
+        text-align: center;
+        padding: var(--inputMargin);
+        grid-template-rows: 1fr 1fr;
+    }
+    /* Video */
+    video {
+        width: 100%;
+        height: auto;
+        grid-row: 1;
+    }
+    /* Data */
+    #data {
+        grid-row: 2;
+        display: flex;
+        justify-content: space-around;
+    }
+    #data div {
+        padding: 10px;
+    }
+    /* Biography */
+    #biography {
+        width: 100%;
+        grid-row: 1;
+        margin: auto;
+        padding: auto;
+        grid-column: 3;
+    }
+}

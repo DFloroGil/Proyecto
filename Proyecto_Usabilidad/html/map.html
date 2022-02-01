@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>MegaOne: Dr. Warrior</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/image/fav.ico">
+
+    <script src="../js/javascript.js" defer></script>
+
+    <style>
+        ul {
+            list-style: none;
+        }
+        
+        ul~li {
+            margin: var(--navMargin);
+        }
+        
+        ul a {
+            color: var(--dark);
+            font-size: var(--navSize);
+        }
+        
+        ul li:hover {
+            text-shadow: #FFCC00 1px 0 10px;
+        }
+        
+        ul a:visited {
+            color: var(--highlight);
+        }
+    </style>
+</head>
+
+<body onscroll="stickyNav();" onload="setDoctorData();">
+
+    <!-- Navegation Bar -->
+    <nav>
+        <!-- <i id="burger-icon" class="fa fa-bars" onclick="mobileNav();"></i> -->
+        <a class="logo" href="../index.html">
+            <img src="../assets/image/logo.png" alt="Logo. Home">
+        </a>
+        <a href="../html/blog.html">Blog</a>
+        <a href="../html/doctor.html">Doctor</a>
+        <a href="../html/gallery.html">Gallery</a>
+        <a href="../html/contact.html">Contact</a>
+    </nav>
+
+    <br>
+
+    <!-- Main Content -->
+    <main>
+        <ul>
+            <li><a href="../index.html">Main Page:</a></li>
+            <ul>
+                <li>
+                    <a href="../index.html#doctor">Doctor</a>
+                </li>
+                <li>
+                    <a href="../index.html#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="../index.html#staff">Our Staff</a>
+                </li>
+                <li>
+                    <a href="../index.html#blog">Blog</a>
+                </li>
+            </ul>
+            <li>
+                <a href="../html/doctor.html">Doctor</a>
+            </li>
+            <li>
+                <a href="../html/gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="../html/blog.html">Blog: Tips & Feedbacks</a>
+            </li>
+            <li>
+                <a href="../html/contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="../html/map.html">Web Map</a>
+            </li>
+        </ul>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Social Media Links -->
+        <div id="footerLinks">
+            <a href=""><i class="fa fa-whatsapp"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-pinterest-p"></i></a>
+            <a id="web_map" href="../html/map.html">Web Map</a>
+        </div>
+        <!-- CopyRight -->
+        <p style="font-weight: bold;"><sup>&#169;</sup>2021 MegaOne.</p>
+    </footer>
+</body>
+
+</html>

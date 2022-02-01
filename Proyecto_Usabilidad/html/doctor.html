@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>MegaOne: Dr. Warrior</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/doctor.css">
+    <link rel="icon" type="image/x-icon" href="../assets/image/fav.ico">
+
+    <script src="../js/javascript.js" defer></script>
+</head>
+
+<body onscroll="stickyNav();" onload="setDoctorData();">
+
+    <!-- Navegation Bar -->
+    <nav>
+        <!-- <i id="burger-icon" class="fa fa-bars" onclick="mobileNav();"></i> -->
+        <a class="logo" href="../index.html">
+            <img src="../assets/image/logo.png" alt="Logo. Home">
+        </a>
+        <a href="../html/blog.html">Blog</a>
+        <a class="active" href="">Doctor</a>
+        <a href="../html/gallery.html">Gallery</a>
+        <a href="../html/contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <img id="doctorImg" src="../assets/image/doctor.png" alt="Dr. Warrior">
+
+        <article id="container">
+            <video src="../assets/video/doctor.mp4" controls> Your browser can't support video. </video>
+            <div id="data">
+                <div>
+                    <p class="numbers">0</p>
+                    <p>TOTAL CASES</p>
+                </div>
+                <div>
+                    <p class="numbers">0</p>
+                    <p>SKIN SURGERIES</p>
+                </div>
+                <div>
+                    <p class="numbers">0</p>
+                    <p>HOURS OF WORK</p>
+                </div>
+                <div>
+                    <p class="numbers">0</p>
+                    <p>YEARS EXPERIENCE</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="biography">
+            <p id="text"></p>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Social Media Links -->
+        <div id="footerLinks">
+            <a href=""><i class="fa fa-whatsapp"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-pinterest-p"></i></a>
+            <a id="web_map" href="../html/map.html">Web Map</a>
+        </div>
+        <!-- CopyRight -->
+        <p style="font-weight: bold;"><sup>&#169;</sup>2021 MegaOne.</p>
+    </footer>
+
+    <!-- Contact US -->
+    <div id="contactUs" onclick="mailUsToogle(event);">
+        <i class="material-icons">email</i>
+    </div>
+    <div id="contactBubble">
+        <h1>Boook Appointment</h1>
+        <p>Send us yout name and mail and we will contact you!</p>
+        <p>We will send you via mail a date with your meeting.</p>
+        <p>Remember: Your 1<sup><u>st</u></sup> appointment it's free! </p>
+        <form action="" method="post" id="contactUsForm">
+            <input id="nameBubble" type="text" placeholder="Your Name">
+            <input id="emailBubble" type="text" placeholder="Your e-Mail">
+            <input id="sendBubble" type="image" src="../assets/image/contact_send.png " alt="Send">
+        </form>
+    </div>
+</body>
+
+</html>

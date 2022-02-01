@@ -1,0 +1,59 @@
+/* Imports */
+
+@import 'styles.css';
+@import url(https://fonts.googleapis.com/css?family=Dosis:600,200|Great+Vibes);
+
+/* General */
+
+article {
+    transition: 0.5s !important;
+    padding: var(--inputMargin) !important;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--dark);
+    padding: var(--inputMargin);
+    background-color: transparent;
+    border-bottom: 2px solid var(--dark);
+}
+
+button:hover {
+    color: var(--highlight);
+    border-bottom: 2px solid var(--highlight);
+}
+
+button.active {
+    border-bottom: 2px solid var(--highlight);
+}
+
+
+/* Content */
+
+#tabs,
+section {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-self: center;
+}
+
+#container {
+    display: grid;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    grid-gap: var(--iconMargin);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+@media screen and (min-width: 400px) {
+    .right {
+        float: right;
+    }
+    .left {
+        float: left;
+    }
+}

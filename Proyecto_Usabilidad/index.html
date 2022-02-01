@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>MegaOne: Beautify YourSelf</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="assets/image/fav.ico">
+
+    <script src="js/javascript.js" defer></script>
+</head>
+
+<body onscroll="stickyNav();" onload="loadIndexTexts();">
+
+    <nav aria-label="navegacion a contenido">
+        <a id="jump_content" href="#mainContent" aria-label="enlace al contenido proncipal" style="color: black; z-index: 1000;">Saltar al Contenido</a>
+    </nav>
+
+    <!-- Navegation Bar -->
+    <nav aria-label="navegacion principal">
+        <a class="logo active" href="">
+            <img src="assets/image/logo.png" alt="Logo. Home">
+        </a>
+        <a href="#mainContent">Home</a>
+        <a href="#doctor">Doctor</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#staff">Staff</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main aria-label="main view; article container">
+        <article id="mainContent" aria-labelledby="mainh1">
+            <h1 id="mainh1">Skin Specialist</h1>
+            <h2>Beautify YourSelf</h2>
+            <img id="beauty1" src="assets/image/index_main.jpg" alt="'Post' our clinics">
+            <div id="mainText">
+                <p id="text1"></p>
+                <a id="btn1" class="btn" href="html/contact.html">Book Appointment</a>
+            </div>
+        </article>
+
+        <article id="doctor" aria-labelledby="doch1">
+            <img src="assets/image/doctor.png" alt="Dr. Warrior">
+            <div>
+                <h1 id="doch1">Information about me</h1>
+                <h2 style="color: white">Dr. Jhon Warrior</h2>
+                <p id="text2"></p>
+                <p id="text3"></p>
+                <br>
+                <a id="btn2" class="btn" href="html/doctor.html">Read More About Me</a>
+            </div>
+        </article>
+
+        <article id="gallery" aria-labelledby="galleryh1">
+            <h1 id="galleryh1">Skin Treatment</h1>
+            <h2>Patient Gallery</h2>
+            <p id="text4"></p>
+            <a id="gallery_img" href="html/gallery.html">
+                <img src="assets/image/index_gallery.jpg" alt="Gallery Link">
+            </a>
+            <p id="titleTreatment"><strong>Skin Treatment <a href="html/blog.html">#1032</a></strong></p>
+        </article>
+
+        <article id="staff" aria-labelledby="staffh1">
+            <h1 id="staffh1">Our Staff</h1>
+            <h2>Professinals</h2>
+            <p id="text5"></p>
+            <div id="staff_cards">
+                <div class="card">
+                    <i class="fa fa-quote-right"></i>
+                    <p>Qui magnam incidunt asperiores vero quaerat, possimus quasi voluptate beatae enim eaque nesciunt suscipit facere maiores totam illum neque velit placeat ut.</p>
+                </div>
+                <div class="card">
+                    <i class="fa fa-quote-right"></i>
+                    <p>Qui magnam incidunt asperiores vero quaerat, possimus quasi voluptate beatae enim eaque nesciunt suscipit facere maiores totam illum neque velit placeat ut.</p>
+                </div>
+                <div class="card">
+                    <i class="fa fa-quote-right"></i>
+                    <p>Qui magnam incidunt asperiores vero quaerat, possimus quasi voluptate beatae enim eaque nesciunt suscipit facere maiores totam illum neque velit placeat ut.</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="blog" aria-labelledby="blogh1">
+            <div>
+                <h1 style="color: white" id="blogh1">Read our blog</h1>
+                <h2>Beautiful Skin Tips</h2>
+                <p id="text6"></p>
+                <br>
+                <br>
+                <a id="btn6" class="btn" href="html/blog.html">Read More Tips</a>
+            </div>
+            <img src="assets/image/index_blog.jpg" alt="Blog Preview">
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer aria-label="main footer">
+        <br>
+        <!-- Social Media Links -->
+        <div id="footerLinks">
+            <a href="" title="whatsapp"><i class="fa fa-whatsapp"></i></a>
+            <a href="" title="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="" title="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="" title="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="" title="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="" title="pinterest"><i class="fa fa-pinterest-p"></i></a>
+            <a id="web_map" href="html/map.html">Web Map</a>
+        </div>
+        <!-- CopyRight -->
+        <p style="font-weight: bold;"><sup>&#169;</sup>2021 MegaOne.</p>
+    </footer>
+
+    <!-- Contact US -->
+    <footer aria-label="footer contact">
+        <a id="contactUs" aria-label="contact page link" href="html/contact.html"><i class="material-icons">email</i></a>
+    </footer>
+
+</body>
+
+</html>
