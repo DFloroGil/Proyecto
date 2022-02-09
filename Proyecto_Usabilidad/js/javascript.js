@@ -107,8 +107,8 @@ function getBlogData(count, id) {
     let imgs = [];
     let content = getBlogContent(id);
     for (let i = 1; i <= count; i++) {
-        //url format: /assets/image/blog_(tips|feedbacks)_(number).jpg
-        imgs.push("../assets/image/blog_" + id + "_" + i + ".jpg");
+        //url format: /assets/image/blog_(tips|feedbacks)_(number).webp
+        imgs.push("../assets/image/blog_" + id + "_" + i + ".webp");
     }
     return ({
         img: imgs,
@@ -185,7 +185,7 @@ function fillGalleryContent(id) {
     dots[pointer].classList.add('active');
     /* Image */
     let img = document.querySelector('#image');
-    img.src = "../assets/image/gallery_" + id + ".jpg";
+    img.src = "../assets/image/gallery_" + id + ".webp";
     /* Image - Count */
     let count = Number(id) + Number(1);
     document.querySelector('#count').textContent = count + " / 4";
